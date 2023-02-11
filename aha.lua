@@ -1,14 +1,4 @@
---made by rouxhaver/1+1=2
---chat "/e chat " to move your head to someone, then when you chat it looks like they chatted (;
 
---only works well in games without player collison, no chat gui and bubble chat (Like Rate My Avatar)
-
---recommended Head:
---https://www.roblox.com/bundles/337/City-Life-Woman
-
-
-
---reanimate by MyWorld#4430 discord.gg/pYVHtSJmEY
 local v3_net, v3_808 = Vector3.new(0.1, 25.1, 0.1), Vector3.new(8, 0, 8)
 local function getNetlessVelocity(realPartVelocity)
     if realPartVelocity.Magnitude > 1 then
@@ -19,10 +9,8 @@ local function getNetlessVelocity(realPartVelocity)
     end
     return v3_net + realPartVelocity * v3_808
 end
-local simradius = "shp" --simulation radius (net bypass) method
---"shp" - sethiddenproperty
---"ssr" - setsimulationradius
---false - disable
+local simradius = "shp" 
+
 local simrad = math.huge --simulation radius value
 local healthHide = false --moves your head away every 3 seconds so players dont see your health bar (alignmode 4 only)
 local reclaim = true --if you lost control over a part this will move your primary part to the part so you get it back (alignmode 4)
@@ -39,13 +27,7 @@ local addtools = false --puts all tools from backpack to character and lets you 
 local hedafterneck = true --disable aligns for head and enable after neck or torso is removed
 local loadtime = game:GetService("Players").RespawnTime + 0.5 --anti respawn delay
 local method = 3 --reanimation method
---methods:
---0 - breakJoints (takes [loadtime] seconds to load)
---1 - limbs
---2 - limbs + anti respawn
---3 - limbs + breakJoints after [loadtime] seconds
---4 - remove humanoid + breakJoints
---5 - remove humanoid + limbs
+
 local alignmode = 1 --AlignPosition mode
 --modes:
 --1 - AlignPosition rigidity enabled true
