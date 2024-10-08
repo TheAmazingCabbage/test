@@ -1,11 +1,1 @@
-https://blog.netwrix.com/2021/11/30/extracting-password-hashes-from-the-ntds-dit-file/
-
-
-https://adsecurity.org/?p=2362
-
-
-
-
-
-
-https://pentestmonkey.net/uncategorized/from-local-admin-to-domain-admin
+https://github.com/nholuongut/active-directory-exploitation-cheat-sheet
