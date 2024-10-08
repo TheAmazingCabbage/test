@@ -1,1 +1,4 @@
 https://blog.netwrix.com/2021/11/30/extracting-password-hashes-from-the-ntds-dit-file/
+
+
+https://adsecurity.org/?p=2362
